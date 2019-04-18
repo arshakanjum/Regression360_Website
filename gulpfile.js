@@ -113,7 +113,7 @@ function js() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
-    .pipe(browsersync.stream());
+    .pipe(browsersync.stream({once: true}));
 }
 
 // Watch files
